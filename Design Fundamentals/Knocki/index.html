@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apollo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+        body {
+            background-image: url('Background.png');
+            background-position: center;
+            background-repeat: repeat;
+            position: relative;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+        :root {
+            --mainColor: #bac0c2;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-family: 'Raleway', sans-serif;
+            align-items: center;
+
+
+        }
+
+
+
+        a {
+            background:
+                linear-gradient(to bottom, var(--mainColor) 0%,
+                var(--mainColor) 100%);
+            background-position: 0 100%;
+            background-repeat: repeat-x;
+            background-size: 1px 1px;
+            color: #6b6f70;
+            text-decoration: none;
+            transition: background-size .2s;
+        }
+
+        a:hover {
+            background-size: 4px 50px;
+        }
+
+        .left {
+            float: left;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        .right {
+            float: right;
+            margin-top: 14%;
+            margin-right: 5%;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+    </style>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky")
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="url">Members </a>
+        <a href="url">Benchmarking</a>
+        <img src="ApolloLogo.png" width="15%" height="15%">
+        <a href="url">Protoytpes</a>
+        <a href="url">Personas</a>
+    </div>
+
+    <div class="content">
+
+        <img class="left" src="KnockiProduct.png" width="40%" height="40%">
+
+        <img class="right" src="LowQualText3.png" width="40%" height="40%">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+
+</body>
+
+</html>
