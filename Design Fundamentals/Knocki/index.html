@@ -73,33 +73,18 @@
         .sticky {
             position: fixed;
             top: 0;
-            width: 100%;
+            width: 80%;
         }
 
         .sticky+.content {
-            padding-top: 60px;
+            padding-top: 50px;
         }
     </style>
-    <script>
-        window.onscroll = function () {
-            myFunction()
-        };
 
-        var header = document.getElementById("header");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                header.classList.add("sticky")
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <div class="header">
+    <div class="header" id="myHeader">
         <a href="url">Members </a>
         <a href="url">Benchmarking</a>
         <img src="ApolloLogo.png" width="15%" height="15%">
@@ -112,6 +97,22 @@
         <img class="left" src="KnockiProduct.png" width="40%" height="40%">
 
         <img class="right" src="LowQualText3.png" width="40%" height="40%">
+        <script>
+            window.onscroll = function () {
+                myFunction()
+            };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
 
         <br>
         <br>
