@@ -87,7 +87,22 @@
         .item:last-child>span {
             margin-left: auto;
         }
+
+        .pics {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .box {
+            margin-bottom: 4%;
+            border: 1px solid #021a40;
+
+        }
     </style>
+
 
 <body>
     <div class="header" id="myHeader">
@@ -105,13 +120,16 @@
             <p>Personas</p>
         </a>
     </div>
+    <br>
+    <br>
+    <br>
 
     <div class="content">
-
-        <img src="pfp1.png">
-        <img src="pfp2.png">
-        <img src="pfp3.png">
-        <img src="pfp4.png">
-    </div>
+        <div class="pics">
+            <img class="box" src="pfp1.png">
+            <img class="box" src="pfp2.png">
+            <img class="box" src="pfp3.png">
+            <img class="box" src="pfp4.png">
+        </div>
 
 </body>
