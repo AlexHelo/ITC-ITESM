@@ -1,2 +1,2 @@
 # ITC-ITESM
-Activities and Schoolwork from my CS carreer
+Activities and Schoolwork from my CS major
