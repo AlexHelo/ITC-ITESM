@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apollo | Personas</title>
+    <link rel="icon" href="favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+        body {
+            background-image: url('Background.png');
+            background-position: center;
+            background-repeat: repeat;
+            position: relative;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        :root {
+            --mainColor: #bac0c2;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        a {
+            color: #6b6f70;
+            text-decoration: none;
+        }
+
+        p {
+            background:
+                linear-gradient(to bottom, var(--mainColor) 0%,
+                var(--mainColor) 100%);
+            background-position: 0 100%;
+            background-repeat: repeat-x;
+            background-size: 1px 1px;
+            color: #6b6f70;
+            text-decoration: none;
+            transition: background-size .2s;
+        }
+
+        p:hover {
+            background-size: 4px 50px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 80%;
+        }
+
+        .sticky+.content {
+            padding-top: 50px;
+        }
+
+        .item {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item:first-child>span {
+            margin-right: auto;
+        }
+
+        .item:last-child>span {
+            margin-left: auto;
+        }
+
+        .pics {
+            float: left;
+            width: 100%;
+            height: 1250px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: column;
+
+        }
+
+        .persona {
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            height: 50%;
+            margin-left: 5%;
+            flex-direction: column;
+        }
+
+        .persona:first-child>span {
+            margin-right: auto;
+        }
+
+        .persona:last-child>span {
+            margin-left: auto;
+        }
+
+        .box {
+            display: flex;
+            border-radius: 50%;
+            width: 50%;
+            height: 50%;
+            margin-bottom: 15px;
+            margin-left: 15px;
+            border: 1px solid #021a40;
+        }
+
+        .desc {
+            display: flex;
+            width: 40%;
+            height: 350px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 30;
+            flex-direction: column;
+        }
+    </style>
+
+
+<body>
+    <div class="header" id="myHeader">
+        <a class="item" href="members.html">
+            <p>Members</p>
+        </a>
+        <a class="item" href="benchmarking.html">
+            <p>Benchmarking</p>
+        </a>
+        <a class="item" href="index.html">
+            <img class="item" border="0" src="ApolloLogo.png" width="15%" height="15%">
+        </a>
+        <a class="item" href="url">
+            <p>Prototypes</p>
+        </a>
+        <a class="item" href="personas.html">
+            <p>Personas</p>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="pics">
+        <div class="persona">
+            <img class="box" src="persona1.jpeg">
+            <div class="desc">
+                <h1>Gabriela García</h1>
+                <ul>
+                    <li>20 years</li>
+                    <li>Medical Student </li>
+                    <li>I would describe myself as a quiet person who <br>
+                        likes to listen to music and spend time <br>
+                        outdoors with my friends to relax</li>
+                    <li>dedicated</li>
+                    <li>bad at math</li>
+                    <li>good dancer</li>
+                    <li>does not have enough mony to go out <br>
+                        every week-end to dance with their friends</li>
+                </ul>
+            </div>
+        </div>
+        <div class="persona">
+            <img class="box" src="persona2.jpg">
+            <div class="desc">
+                <h1>Jonathan Oliveira</h1>
+                <ul>
+                    <li>27 years</li>
+                    <li>Lawyer</li>
+                    <li>I am a person who is completely dedicated <br>
+                        to work during the week but on weekends <br>
+                        I like to go out and have fun with my friends...</li>
+                    <li>he is good creating atmosphere at parties</li>
+                    <li>good in interpersonal relationships</li>
+                    <li>he does not like the party to end because of<br>
+                        lack of good music</li>
+                </ul>
+            </div>
+        </div>
+        <div class="persona">
+            <img class="box" src="persona3.jpeg">
+            <div class="desc">
+                <h1>Carolina Ledesma</h1>
+                <ul>
+                    <li>41 years</li>
+                    <li>Hotel Manager</li>
+                    <li>I consider myself a loving, patient and <br>
+                        responsible person who loves to spend quality<br>
+                        time with the family</li>
+                </ul>
+            </div>
+        </div>
+        <div class="persona">
+            <img class="box" src="persona4.jpeg">
+            <div class="desc">
+                <h1>Salvador Fernández</h1>
+                <ul>
+                    <li>53 years</li>
+                    <li>French teacher in high school</li>
+                    <li>My students say that I am a fun person who <br>
+                        is always willing to help and who is committed <br>
+                        to education</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
