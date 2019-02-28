@@ -174,7 +174,7 @@
             margin-left: 10%;
             margin-right: 10%;
             font-family: 'Raleway', sans-serif;
-
+            z-index: 50;
 
         }
 
@@ -264,6 +264,25 @@
         .career {
             font-style: oblique;
         }
+
+        .hvr-grow {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+        }
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
     </style>
 
 
@@ -272,7 +291,7 @@
         <a class="item" href="members.html">
             <p>Members</p>
         </a>
-        <a class="item" href="url">
+        <a class="item" href="benchmarking.html">
             <p>Benchmarking</p>
         </a>
         <a class="item" href="index.html">
@@ -290,11 +309,12 @@
     <br>
 
     <div class="content">
+
         <div class="pics">
-            <img class="box" src="pfp1.png">
-            <img class="box" src="pfp2.png">
-            <img class="box" src="pfp3.png">
-            <img class="box" src="pfp4.png">
+            <img class="box hvr-grow" src="pfp1.png">
+            <img class="box hvr-grow" src="pfp2.png">
+            <img class="box hvr-grow" src="pfp3.png">
+            <img class="box hvr-grow" src="pfp4.png">
         </div>
         <div class="pics">
             <div class="text">
