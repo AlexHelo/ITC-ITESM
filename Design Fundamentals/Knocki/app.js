@@ -9,7 +9,7 @@ const slideWidth = slides[0].getBoundingClientRect().width;
 
 //slides next to one another
 const setSlidePosition = (slide, index) => {
-  slide.style.left = slideWidth * index+ 'px';
+  slide.style.left = slideWidth * index + 'px';
 }
 
 slides.forEach(setSlidePosition);
@@ -26,28 +26,28 @@ const updateDots = (currentDot, targetDot) => {
 }
 
 //left move slides
-prevButton. addEventListener('click', e=> {
+prevButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide');
   const prevSlide = currentSlide.previousElementSibling;
   const currentDot = dotsNav.querySelector('.current-slide');
-  const prevDot= currentDot.previousElementSibling;
-  moveToSlide(track,currentSlide, prevSlide);
+  const prevDot = currentDot.previousElementSibling;
+  moveToSlide(track, currentSlide, prevSlide);
   updateDots(currentDot, prevDot);
 })
 
 //right move slides
-nextButton.addEventListener('click', e =>{
+nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
   const currentDot = dotsNav.querySelector('.current-slide');
-  const nextDot= currentDot.nextElementSibling;
-  moveToSlide(track,currentSlide, nextSlide);
+  const nextDot = currentDot.nextElementSibling;
+  moveToSlide(track, currentSlide, nextSlide);
   updateDots(currentDot, nextDot);
 })
 
 //click nav ind move to slide
 
-dotsNav.addEventListener ('click', e => {
+dotsNav.addEventListener('click', e => {
 
   const targetDot = e.target.closest('button');
 
