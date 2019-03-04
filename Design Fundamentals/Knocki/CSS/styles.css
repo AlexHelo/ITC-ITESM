@@ -100,13 +100,14 @@ p:hover {
   position: relative;
   height: 848px;
   width: 400px;
-  margin-left: 50%;
+  margin-left: 25%;
   transform: translateX(-50%);
   margin-top: 60px;
 }
 
 .carousel__image {
   width: 78%;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .3));
 }
 
 .carousel__track-container {
