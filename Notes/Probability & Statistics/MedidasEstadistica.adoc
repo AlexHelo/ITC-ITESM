@@ -1,0 +1,79 @@
+= Medidas de Estadística Desriptiva
+Manuel Alejandro Hernández López <A01650390@itesm.mx>
+:stem: latexmath
+
+*Estadistica Descriptiva:* _Consiste en la recolección, organización, resumen y la presentación de los datos de manera informativa._
+
+*Estadistica Inferencial:* _Análisis e interpretación de la información para determinar propiedades de una población con base en un muestreo de ella._
+
+
+.Tipos de Variables
+|===
+|Variables Cuantitativas |Variables Cualitativas
+
+| Forma numérica.
+| Caracteristicas no numéricas.
+
+|===
+
+== Medidas de Tendencia Central
+
+****
+* Media (Promedio)
+ \[
+ \bar{x}= \sum \frac{x_i}{n}
+ \] 
+ \[
+ \bar{x} =\frac{\sum x_m f_m}{\sum f_m}
+ \] 
+
+
+ 
+    ** Ponderada +
+\[
+ \bar{x} =\frac{\sum w_i x_i}{\sum w_i}
+ \] 
+
+
+    ** Gemoétrica
+\[
+\bar{x_s} =\sqrt[n]{\pi x_i}
+\] 
+
+* Mediana +
+
+    ** Con datos impares
+     \[
+ \frac{x_n+1}{2}
+ \] 
+    ** Con datos pares
+    \[
+ \frac{1}{2}\left ( \frac{x_n}{2} + \frac{x_n}{2}+1\right )   
+ \] 
+    ** Con datos agrupados
+    \[
+        Med = \liminf + \frac{\frac{n}{2}-\sum_{0}^{m-1} f_i}{f_{m2}} 
+        \]
+
+* Moda
+    ** Con datos Agrupados 
+\[
+        Moda = M + \frac{1}{2} \left(\frac{c-a}{2b-a-c} \right)k
+    \]
+****
+
+== Medidas de Disperion
+
+* Rango: \( Maximo - Minimo \)
+* Rango Medio: \(\frac{Max-Min}{2} \)
+* Desviacion Estandar: \(s_i = +\sqrt{s^2}\)
+* Varianza: \(\frac{\sum \left(x_i - \bar{x}\right)^2}{n-1}\)
+* Varianza con Datos Agrupados: \(\frac{\sum{}^{M}f_n\left(x_0 - \bar{x}\right)^2}{\left(\sum{}{M}f_n\right)-1}\)
+* Desviacion Media Absoluta:
+\[
+    d_{ma} = \frac{\sum |x_i - \bar{x}|}{n}
+    \]
+
+\[
+    d_{ma} = \frac{\sum |x_m - \bar{x}|f_m}{n}
+    \]
